@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #292929;
+}
+
+@layer components {
+    .heroButton {
+        @apply px-6 py-2 border border-[#292929] rounded-full text-sm max-sm:tracking-[3px] md:tracking-[4px] lg:tracking-[5px] text-[#7dd3fc] transition-all hover:border-[#7dd3fc]/60 hover:text-[#7dd3fc]/60
+    }
+}
