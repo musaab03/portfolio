@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-import upPic from "../public/up.webp";
+import upPic from "../public/up.png";
+import downPic from "../public/down.png";
+
 import jsPic from "../public/js.png";
 import nodePic from "../public/node.png";
 import expressPic from "../public/express.png";
@@ -77,7 +79,7 @@ const Skills = (props: Props) => {
           <Image
             src={upPic}
             alt=""
-            className="h-16 w-16 rounded-full grayscale hover:grayscale-0 transition-all duration-300"
+            className="h-16 w-16 rounded-full hover:grayscale transition-all duration-300 hover:shadow-[#A8E1F4]/50 hover:shadow-lg"
           />
         </Link>
       </motion.div>
@@ -100,7 +102,7 @@ const Skills = (props: Props) => {
         {skills.map((skill, i) => (
           <Image
             src={skill}
-            className="w-16 h-16 xl:w-24 xl:h-24 object-contain shadow-inner hover:scale-125 transition-all duration-300 hover:bg-[#A8E1F4] p-2"
+            className="w-16 h-16 xl:w-24 xl:h-24 object-contain shadow-inner hover:scale-125 transition-all duration-300 hover:bg-[#A8E1F4] p-2 cursor-pointer"
             alt=""
             key={i}
           />
@@ -123,9 +125,9 @@ const Skills = (props: Props) => {
       >
         <Link href="#projects">
           <Image
-            src={upPic}
+            src={downPic}
             alt=""
-            className="h-16 w-16 rounded-full scale-y-[-1] grayscale hover:grayscale-0 transition-all duration-300"
+            className="h-16 w-16 rounded-full hover:grayscale transition-all duration-300 hover:shadow-[#A8E1F4]/50 hover:shadow-lg"
           />
         </Link>
       </motion.div>

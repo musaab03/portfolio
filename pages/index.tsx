@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="text-white h-screen snap snap-y snap-mandatory overflow-scroll z-0 scroll-smooth scrollbar-thin scrollbar-thumb-[#A8E1F4] overflow-x-hidden">
       <Head>
-        <title>Musaab's Portfolio</title>
+        <title>Musaab&apos;s Portfolio</title>
       </Head>
 
       <Header />

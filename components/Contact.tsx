@@ -39,7 +39,7 @@ function Contact({}: Props) {
           Lets Talk.
         </h4>
 
-        <div className="space-y-2 md:space-y-10">
+        <div className="space-y-2 md:space-y-10 font-semibold italic">
           <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="text-[#A8E1F4] h-7 w-7 animate-pulse" />
             <p className="text-md md:text-xl">+44 7305560325</p>

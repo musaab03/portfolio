@@ -3,7 +3,8 @@ import Image from "next/image";
 import React from "react";
 import hoodiePic from "../public/laptop.jpg";
 
-import upPic from "../public/up.webp";
+import upPic from "../public/up.png";
+import downPic from "../public/down.png";
 import Link from "next/link";
 
 type Props = {};
@@ -47,7 +48,7 @@ const About = (props: Props) => {
           <Image
             src={upPic}
             alt=""
-            className="h-16 w-16 rounded-full grayscale hover:grayscale-0 transition-all duration-300"
+            className="h-16 w-16 rounded-full hover:grayscale transition-all duration-300 hover:shadow-[#A8E1F4]/50 hover:shadow-lg"
           />
         </Link>
       </motion.div>
@@ -95,15 +96,15 @@ const About = (props: Props) => {
           About Me
         </h4>
         <p className="text-base w-80 md:w-80 text-justify">
-          Hi there! My name is Musaab and I'm a junior software developer with a
-          passion for creating innovative and functional solutions. I have
-          experience working with JavaScript and Python, and I love the
+          Hi there! My name is Musaab and I&apos;m a junior software developer
+          with a passion for creating innovative and functional solutions. I
+          have experience working with JavaScript and Python, and I love the
           challenge of finding creative ways to solve problems using these
           technologies. As a developer, I am committed to writing clean,
-          efficient code and continuously improving my skills. When I'm not
+          efficient code and continuously improving my skills. When I&apos;m not
           coding, you can usually find me reading about the latest developments
-          in technology or exploring the great outdoors. I'm excited to see what
-          the future holds in the world of software development!
+          in technology or exploring the great outdoors. I&apos;m excited to see
+          what the future holds in the world of software development!
         </p>
       </motion.div>
 
@@ -123,9 +124,9 @@ const About = (props: Props) => {
       >
         <Link href="#skills">
           <Image
-            src={upPic}
+            src={downPic}
             alt=""
-            className="h-16 w-16 rounded-full scale-y-[-1] grayscale hover:grayscale-0 transition-all duration-300"
+            className="h-16 w-16 rounded-full hover:grayscale transition-all duration-300 hover:shadow-[#A8E1F4]/50 hover:shadow-lg"
           />
         </Link>
       </motion.div>

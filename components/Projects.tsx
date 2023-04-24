@@ -12,7 +12,9 @@ import psqlPic from "../public/psql.png";
 import expressPic from "../public/express.png";
 import jestPic from "../public/jest.png";
 import pythonPic from "../public/python.png";
-import upPic from "../public/up.webp";
+
+import upPic from "../public/up.png";
+import downPic from "../public/down.png";
 
 type Props = {};
 
@@ -75,7 +77,7 @@ function Projects({}: Props) {
           <Image
             src={upPic}
             alt=""
-            className="h-16 w-16 rounded-full grayscale hover:grayscale-0 transition-all duration-300"
+            className="h-16 w-16 rounded-full hover:grayscale transition-all duration-300 hover:shadow-[#A8E1F4]/50 hover:shadow-lg"
           />
         </Link>
       </motion.div>
@@ -94,7 +96,7 @@ function Projects({}: Props) {
         className="w-full flex space-x-5 overflow-x-scroll p-6 md:max-w-5xl snap-x snap-mandatory mt-4 md:mt-20 scroll-mb-6 scrollbar scrollbar-thumb-[#A8E1F4] scrollbar-track-black/20"
       >
         {projects.map((project, i) => (
-          <article className="group projectCard">
+          <article className="group projectCard" key={i}>
             <motion.div
               initial={{
                 y: -100,
@@ -115,7 +117,6 @@ function Projects({}: Props) {
                 src={project.pic}
                 alt=""
                 className="projectImage grayscale group-hover:grayscale-0 transition-all duration-200 group-hover:shadow-[#A8E1F4]/10 group-hover:shadow-md"
-                key={i}
               />
             </motion.div>
             <motion.div
@@ -148,11 +149,19 @@ function Projects({}: Props) {
                   ))}
                 </div>
                 <ul className="space-y-4">
-                  <li className=" font-light italic">{project.desc}</li>
-                  <li className="flex space-x-4 md:space-x-14 justify-center">
+                  <li className=" font-light italic" key={i}>
+                    {project.desc}
+                  </li>
+                  <li
+                    className="flex space-x-4 md:space-x-14 justify-center"
+                    key={i}
+                  >
                     {project.link !== "" ? (
                       <Link href={project.link} target="_blank">
-                        <button className="heroButton grayscale group-hover:grayscale-0">
+                        <button
+                          className="heroButton grayscale group-hover:grayscale-0"
+                          key={i}
+                        >
                           VISIT
                         </button>
                       </Link>
@@ -160,7 +169,10 @@ function Projects({}: Props) {
                       ""
                     )}
                     <Link href={project.repo} target="_blank">
-                      <button className="heroButton grayscale group-hover:grayscale-0">
+                      <button
+                        className="heroButton grayscale group-hover:grayscale-0"
+                        key={i}
+                      >
                         GITHUB
                       </button>
                     </Link>
@@ -188,9 +200,9 @@ function Projects({}: Props) {
       >
         <Link href="#contact">
           <Image
-            src={upPic}
+            src={downPic}
             alt=""
-            className="h-16 w-16 rounded-full scale-y-[-1] grayscale hover:grayscale-0 transition-all duration-300"
+            className="h-16 w-16 rounded-full hover:grayscale transition-all duration-300 hover:shadow-[#A8E1F4]/50 hover:shadow-lg"
           />
         </Link>
       </motion.div>

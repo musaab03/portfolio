@@ -27,20 +27,19 @@ function Header({}: Props) {
       >
         <SocialIcon
           url="https://twitter.com/mus0161"
-          fgColor="transparent"
+          fgColor="#292929"
           bgColor="#A8E1F4"
-          className="hover:bg-gray-600 rounded-full shadow-[#A8E1F4]/20 shadow-lg"
+          className="hover:bg-gray-600 rounded-full hover:grayscale transition-all duration-300 hover:shadow-[#A8E1F4]/50 shadow-[#A8E1F4]/20 shadow-lg"
           target="_blank"
         />
         <SocialIcon
           url="https://instagram.com/musssss19"
-          fgColor="transparent"
+          fgColor="#292929"
           bgColor="#A8E1F4"
-          className="hover:bg-gray-600 rounded-full shadow-[#A8E1F4]/20 shadow-lg"
+          className="hover:bg-gray-600 rounded-full hover:grayscale transition-all duration-300 hover:shadow-[#A8E1F4]/50 shadow-[#A8E1F4]/20 shadow-lg"
           target="_blank"
         />
       </motion.div>
-
 
       <motion.div
         initial={{
@@ -60,16 +59,16 @@ function Header({}: Props) {
       >
         <SocialIcon
           url="https://linkedin.com/in/musaab-uppal"
-          fgColor="transparent"
+          fgColor="#292929"
           bgColor="#A8E1F4"
-          className="hover:bg-gray-600 rounded-full shadow-[#A8E1F4]/20 shadow-lg"
+          className="hover:bg-gray-600 rounded-full hover:grayscale transition-all duration-300 hover:shadow-[#A8E1F4]/50 shadow-[#A8E1F4]/20 shadow-lg"
           target="_blank"
         />
         <SocialIcon
           url="https://github.com/musaab03"
-          fgColor="transparent"
+          fgColor="#292929"
           bgColor="#A8E1F4"
-          className="hover:bg-gray-600 rounded-full shadow-[#A8E1F4]/20 shadow-lg"
+          className="hover:bg-gray-600 rounded-full hover:grayscale transition-all duration-300 hover:shadow-[#A8E1F4]/50 shadow-[#A8E1F4]/20 shadow-lg"
           target="_blank"
         />
       </motion.div>
