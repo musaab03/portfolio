@@ -5,7 +5,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        inner: "inset 0px 5px 20px #000000",
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
+  variants: {
+    imageColor: ["responsive", "hover", "focus", "group-hover"],
+  },
 };
