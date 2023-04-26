@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-import hoodiePic from "../public/laptop.jpg";
+import laptopPic from "../public/laptop.jpg";
 
 import upPic from "../public/up.png";
 import downPic from "../public/down.png";
@@ -24,7 +24,7 @@ const About = (props: Props) => {
       transition={{
         duration: 1.5,
       }}
-      className="flex flex-col relative h-screen text-center md-text-left md:flex-row max-w-8xl px-10 justify-evenly mx-auto items-center"
+      className="flex flex-col relative flex-shrink-0 min-h-screen text-center md-text-left md:flex-row max-w-8xl px-10 justify-evenly mx-auto items-center"
     >
       <h3 className="absolute top-[5.75rem] xl:top-[6rem] tracking-[15px] text-white/60 text-2xl ml-4">
         ABOUT
@@ -68,9 +68,9 @@ const About = (props: Props) => {
         }}
       >
         <Image
-          src={hoodiePic}
+          src={laptopPic}
           alt=""
-          className="-mb-20 mt-8 md:mb-0 flex-shrink-0 w-36 h-36 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[20rem] xl:h-[27rem] 2xl:w-[22rem] 2xl:h-[29rem]"
+          className="-mb-20 xs:mt-14 mt-8 md:mb-0 flex-shrink-0 w-36 h-36 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 lg:h-[18rem] xl:w-[20rem] xl:h-[26rem] 2xl:w-[22rem] 2xl:h-[26rem]"
         />
       </motion.div>
 
@@ -95,7 +95,7 @@ const About = (props: Props) => {
           </span>{" "}
           About Me
         </h4>
-        <p className="text-base w-80 md:w-80 text-justify">
+        <p className="md:text-base w-80 xs:w-60 md:w-80 text-justify">
           Hi there! My name is Musaab and I&apos;m a junior software developer
           with a passion for creating innovative and functional solutions. I
           have experience working with JavaScript and Python, and I love the

@@ -12,6 +12,9 @@ import psqlPic from "../public/psql.png";
 import expressPic from "../public/express.png";
 import jestPic from "../public/jest.png";
 import pythonPic from "../public/python.png";
+import htmlPic from "../public/html.png";
+import cssPic from "../public/css.png";
+import webPic from "../public/website.png";
 
 import upPic from "../public/up.png";
 import downPic from "../public/down.png";
@@ -21,6 +24,14 @@ type Props = {};
 function Projects({}: Props) {
   const projects = [
     {
+      pic: apiPic,
+      title: "HOUSE OF GAMES API",
+      tech: [nodePic, psqlPic, expressPic, jestPic, herokuPic],
+      desc: "BACKEND FOR A GAME REVIEW WEB APP",
+      link: "",
+      repo: "https://github.com/musaab03/house_of_games_api",
+    },
+    {
       pic: escaperoomPic,
       title: "GREEN ESCAPE ROOMS",
       tech: [pythonPic],
@@ -29,12 +40,20 @@ function Projects({}: Props) {
       repo: "https://github.com/musaab03/house_of_games_api",
     },
     {
-      pic: apiPic,
-      title: "HOUSE OF GAMES API",
-      tech: [nodePic, psqlPic, expressPic, jestPic, herokuPic],
-      desc: "BACKEND FOR A GAME REVIEW WEB APP",
+      pic: webPic,
+      title: "OLD PORTFOLIO WEBSITE",
+      tech: [htmlPic, cssPic],
+      desc: "BASIC HTML & CSS WEBSITE",
+      link: "https://musaab03.github.io/web_project/index.html",
+      repo: "",
+    },
+    {
+      pic: "",
+      title: "MORE COMING SOON",
+      tech: [],
+      desc: "",
       link: "",
-      repo: "https://github.com/musaab03/house_of_games_api",
+      repo: "",
     },
   ];
 
@@ -52,7 +71,7 @@ function Projects({}: Props) {
       transition={{
         duration: 1.5,
       }}
-      className="h-screen flex relative flex-col text-center md:flex-row max-w-full px-10 justify-evenly mx-auto items-center"
+      className="min-h-screen flex relative flex-col text-center md:flex-row max-w-full px-10 justify-evenly mx-auto items-center"
     >
       <h3 className="absolute top-[6rem] md:top-[4.75rem] tracking-[15px] text-white/60 text-2xl">
         PROJECTS{<br />}
@@ -113,11 +132,15 @@ function Projects({}: Props) {
                 once: true,
               }}
             >
-              <Image
-                src={project.pic}
-                alt=""
-                className="projectImage grayscale group-hover:grayscale-0 transition-all duration-200 group-hover:shadow-[#A8E1F4]/10 group-hover:shadow-md"
-              />
+              {project.pic !== "" ? (
+                <Image
+                  src={project.pic}
+                  alt=""
+                  className="projectImage grayscale group-hover:grayscale-0 transition-all duration-200 group-hover:shadow-[#A8E1F4]/10 group-hover:shadow-md"
+                />
+              ) : (
+                ""
+              )}
             </motion.div>
             <motion.div
               initial={{
@@ -135,7 +158,7 @@ function Projects({}: Props) {
               }}
             >
               <div className="px-0 md:px-10 space-y-5">
-                <h4 className="text-xl tracking-[1px] md:tracking-[3px]">
+                <h4 className="text-xl xs:text-sm tracking-[1px] md:tracking-[3px]">
                   {project.title}
                 </h4>
                 <div className="flex space-x-2 my-2 justify-center">
@@ -149,7 +172,7 @@ function Projects({}: Props) {
                   ))}
                 </div>
                 <ul className="space-y-4">
-                  <li className=" font-light italic" key={i}>
+                  <li className="font-light italic" key={i}>
                     {project.desc}
                   </li>
                   <li
@@ -168,14 +191,18 @@ function Projects({}: Props) {
                     ) : (
                       ""
                     )}
-                    <Link href={project.repo} target="_blank">
-                      <button
-                        className="heroButton grayscale group-hover:grayscale-0"
-                        key={i}
-                      >
-                        GITHUB
-                      </button>
-                    </Link>
+                    {project.repo !== "" ? (
+                      <Link href={project.repo} target="_blank">
+                        <button
+                          className="heroButton grayscale group-hover:grayscale-0"
+                          key={i}
+                        >
+                          GITHUB
+                        </button>
+                      </Link>
+                    ) : (
+                      ""
+                    )}
                   </li>
                 </ul>
               </div>

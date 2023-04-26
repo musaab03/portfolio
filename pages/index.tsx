@@ -8,7 +8,7 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="text-white h-screen snap snap-y snap-mandatory overflow-scroll z-0 scroll-smooth scrollbar-thin scrollbar-thumb-[#A8E1F4] overflow-x-hidden">
+    <div className="gradient text-white  flex-shrink-0 h-screen snap snap-y snap-mandatory overflow-scroll z-0 scroll-smooth scrollbar-thin scrollbar-thumb-[#A8E1F4] overflow-x-hidden">
       <Head>
         <title>Musaab&apos;s Portfolio</title>
       </Head>

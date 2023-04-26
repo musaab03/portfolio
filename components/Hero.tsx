@@ -44,7 +44,7 @@ const Hero = (props: Props) => {
       </motion.div>
 
       <div className="space-y-4 mt-5 z-20">
-        <h2 className="text-[#A8E1F4] pb-2 ml-5 tracking-[10px]  text-xs lg:text-lg">
+        <h2 className="text-[#A8E1F4] pb-2 ml-5 tracking-[10px]  text-xs lg:text-lg ">
           SOFTWARE DEVELOPER
         </h2>
         <h1 className="font-bold text-2xl md:text-3xl lg:text-5xl">

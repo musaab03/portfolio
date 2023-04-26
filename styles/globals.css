@@ -8,7 +8,7 @@ body {
 
 @layer components {
   .heroButton {
-    @apply px-6 py-2 border border-[#292929] rounded-full text-sm tracking-[3px] md:tracking-[5px] text-[#A8E1F4] transition-all hover:border-[#CDEDF8]/60 hover:text-[#CDEDF8]/60;
+    @apply px-6 py-2 border border-[#292929] rounded-full text-sm tracking-[3px] md:tracking-[5px] 2xl:tracking-[8px] text-[#A8E1F4] transition-all hover:border-[#CDEDF8]/60 hover:text-[#CDEDF8]/60;
   }
 
   .projectImage {
@@ -16,10 +16,10 @@ body {
   }
 
   .projectCard {
-    @apply flex flex-col rounded-lg items-center space-y-8 flex-shrink-0 w-[300px] md:w-[470px] snap-center bg-black/30 p-10 hover:shadow-[#A8E1F4]/10 hover:shadow-lg hover:rounded-3xl  transition-all duration-300 overflow-hidden;
+    @apply flex flex-col rounded-lg items-center space-y-8 flex-shrink-0 w-[19rem] h-[28rem] md:h-[32rem] max-sm:overflow-y-scroll scrollbar-none md:w-[34rem] snap-center bg-black/30 p-10 hover:shadow-[#A8E1F4]/10 hover:shadow-lg hover:rounded-3xl  transition-all duration-300 overflow-hidden;
   }
 
   .contactInput {
-    @apply outline-none bg-slate-400/10 rounded-sm border-b-2 px-6 py-4 focus:border-[#A8E1F4] hover:border-[#A8E1F4] focus:text-[#A8E1F4] transition-all text-gray-400/60;
+    @apply outline-none bg-slate-400/10 rounded-[5px] border-b-2 px-8 py-4 focus:border-[#A8E1F4] hover:border-[#A8E1F4] focus:text-[#A8E1F4] transition-all text-gray-400/60;
   }
 }
