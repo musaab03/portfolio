@@ -1,7 +1,4 @@
 <h1 align="center">Welcome to my Portfolio Website 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
-</p>
 
 > My portfolio showcasing my projects and skills in frontend development
 
@@ -12,6 +9,9 @@
 
 ## Install
 
+```sh
+git clone https://github.com/musaab03/portfolio
+```
 ```sh
 npm install
 ```
