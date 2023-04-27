@@ -23,6 +23,12 @@ npm install
 npm run dev
 ```
 
+# Tools and Technologies Used
+- ReactJS
+- NextJS
+- Tailwind CSS
+- Deployment via Vercel
+
 ## Author
 
 👤 **Musaab Uppal**
