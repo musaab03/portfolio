@@ -9,15 +9,16 @@
 
 ## Install
 
+1) Clone this repo
 ```sh
 git clone https://github.com/musaab03/portfolio
 ```
+2) Install all the dependencies
 ```sh
 npm install
 ```
 
 ## Usage
-
 ```sh
 npm run dev
 ```
