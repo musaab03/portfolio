@@ -7,6 +7,9 @@
 
 ### ✨ [Demo](https://portfolio-red-iota-12.vercel.app/)
 
+![image](https://user-images.githubusercontent.com/103457332/234883074-8fe75fad-66f4-4f0e-9c01-78df7d70fe39.png)
+
+
 ## Install
 
 ```sh
@@ -16,7 +19,7 @@ npm install
 ## Usage
 
 ```sh
-npm run start
+npm run dev
 ```
 
 ## Author
@@ -25,10 +28,3 @@ npm run start
 
 * Github: [@musaab03](https://github.com/musaab03)
 * LinkedIn: [@musaab-uppal](https://linkedin.com/in/musaab-uppal)
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
