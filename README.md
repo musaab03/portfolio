@@ -24,8 +24,8 @@ npm run dev
 ```
 
 # Tools and Technologies Used
-- ReactJS
-- NextJS
+- React.js
+- Next.js
 - Tailwind CSS
 - Deployment via Vercel
 
